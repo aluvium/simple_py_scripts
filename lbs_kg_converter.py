@@ -5,14 +5,21 @@ import time
 #-----------------------------------------------------------MENU LAYOUT
 def menu():
     print("""
-    ------------------->
+    ---------------------------------------->
     Please press:\n
     '1' for lbs to kg,\n
     '2' for kg to lbs,\n
     '3' for meters to foot,\n
     '4' for foot to meters\n\n
     'q 'for exit
-    ------------------->
+    ---------------------------------------->
+    ''''''''''''''''''''''''''''''''''''';;;;
+    \\'';    \  O                      ;;;;;;;
+    ''        \=\\='           ;o         ;;;;
+    ...........\ \..........  /l\.......'''''
+    ...........|  \_..........l l........;;;;
+    =========================================
+    =========================================
     """)
     return None
 #-----------------------------------------------------------LOOP
@@ -58,12 +65,13 @@ def main():
         ch=input("\n")
         cho_loop(ch)
         in_nr=''
-        while not in_nr.isdecimal():
-            in_nr=input('Enter the number for convertion: ')
+        #while not in_nr.isdecimal():
+        while in_nr.isalpha() or in_nr.isspace() or in_nr=='':
+            in_nr=input('Wrong input, please enter the number for convertion: ')
             if in_nr=='q':
                 sys.exit()
 
-        in_nr=int(in_nr)
+        in_nr=float(in_nr)
         calc_loop(ch,in_nr)
         time.sleep(2)
     return None
