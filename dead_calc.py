@@ -1,16 +1,22 @@
 #ALUVIUM
 #Simple programm which shows you amount of days before you die- based on your imput.
 import os
+import time
+import dead_art
 os.system('cls')
-
+dead_art.d_a()
 # VERSION 1
 age=eval(input('Enter your age: '))
 age_d=age*356
-print(f'You already live {age_d} days.')
-dead=eval(input("\n\nToday's average lifspan of human being is around 75 years. \nEnter how many years are you going to live: "))
+print(f'You already live approximately {age_d} days.')
+dead=eval(input("\n\nAverage Life Expectancy for people is 75 years. \nWhat do You think? How many years are you going to live: "))
 dead_d=dead*356
+print("\n\nThis is rest of your life.")
+time.sleep(2)
 
-for each in range(age_d,dead_d):
-    print(f'{each} Day')
+for each in range(dead_d):
+    print(f'This is your {each} day')
+    time.sleep(0.00001)
+
 print ('\nR. I. P.')
 print(f'\nYou have still {len(range(age_d,dead_d))} days of living. Spend it wisely.\nHappy living :).')
