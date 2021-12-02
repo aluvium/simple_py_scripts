@@ -1,5 +1,12 @@
 #ALUVIUM
-#Fast tool for deep data scan using os.walk
+#Tool for deep data scan using os.walk - similiar to find in the bash
+#Four different searching modules:
+# 1. Full sacn with everything
+# 2. Full without empty folders
+# 3. Only files, skip folders
+# 4. Only files, skip folders but provide full paths.
+# Output can be sorted with two different ways.
+
 import os
 os.system('cls')
 path=input('***Please enter a path for searaching: ')
