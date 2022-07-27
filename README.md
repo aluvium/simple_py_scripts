@@ -1,3 +1,4 @@
 # Simple_python_scripts.
-Scripts wrote in python mostly for learning purpose.
+### One file scripts with different purposes
+##### * rot13.py - rot cipher encoder / decoder
 
