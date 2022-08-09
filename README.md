@@ -4,3 +4,5 @@
 #### * rot13.py - rot cipher encoder / decoder
 #### * os_walk.py - recursive file finder
 
+
+#### * server_cp_cli - for copping remotly folders
